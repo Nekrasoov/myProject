@@ -6,15 +6,12 @@ public class Example10 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Введите имя: ");
-        String name = in.nextLine();
-
         System.out.println("Введите год рождения: ");
         int year = in.nextInt();
 
-        int age = (2022-year);
+        int age = 2022 - year;
 
-        System.out.printf("Имя: %s Возраст: %d ", name, age);
+        System.out.printf("Ваш возраст: %d", age);
         in.close();
     }
 }

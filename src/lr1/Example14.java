@@ -6,17 +6,18 @@ public class Example14 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Введите первое число: ");
+        System.out.println("Введите число: ");
         int a = in.nextInt();
 
-        System.out.println("Введите второе число: ");
-        int b = in.nextInt();
+        int b = a - 1;
 
-        int c = a + b;
+        int c = a + 1;
 
-        int d = a - b;
+        int d = a +  b + c;
 
-        System.out.printf("%d + %d = %d, %d - %d = %d", a, b, c, a, b, d);
+        int e = d * d;
+
+        System.out.printf("%d, %d, %d, %d", b, a, c, e);
         in.close();
     }
 }
