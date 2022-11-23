@@ -16,5 +16,6 @@ public class Example8 {
         int year = in.nextInt();
 
         System.out.printf("Day: %d  Month: %d  Year: %d", day, month, year);
+        in.close();
     }
 }

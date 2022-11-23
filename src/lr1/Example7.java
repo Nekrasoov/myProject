@@ -13,5 +13,6 @@ public class Example7 {
         int age = in.nextInt();
 
         System.out.printf("Name: %s  Age: %d", name, age);
+        in.close();
     }
 }
