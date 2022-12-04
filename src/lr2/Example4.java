@@ -18,5 +18,6 @@ public class Example4 {
         } else {
             System.out.println("Число не попадает в выбранный диапазон");
         }
+        in.close();
     }
 }

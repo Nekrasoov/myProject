@@ -21,6 +21,6 @@ public class Example1 {
         } else {
             System.out.println("Введенное число не делится на 3 без остатка");
         }
-
+        in.close();
     }
 }

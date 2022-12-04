@@ -25,5 +25,6 @@ public class Example2 {
         } else {
             System.out.println("Число не удовлетворяет критериям");
         }
+        in.close();
     }
 }

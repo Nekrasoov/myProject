@@ -17,6 +17,6 @@ public class Example5 {
         int result = x / 1000;
 
         System.out.println("В вашем числе колличество тысяч = " +result%10 );
-
+        in.close();
     }
 }
