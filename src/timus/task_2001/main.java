@@ -22,5 +22,6 @@ public class main {
         int y = b3 - x - b2;
 
         System.out.println(y + " " + x);
+        in.close();
     }
 }
