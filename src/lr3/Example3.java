@@ -1,13 +1,22 @@
 package lr3;
 
+import java.util.Scanner;
+
 public class Example3 {
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("введите колл-во чисел");
+
+        int one = in.nextInt();
+        int [] two = new int[one];
+
         int a = 1;
         int b = 1;
         int c;
 
         System.out.print( a + " " +b+ " ");
-        for (int i = 3; i <= 11; i++) {
+        for (int i = 3; i <= two.length; i++) {
 
             c = a + b;
             System.out.print(c + " ");
@@ -18,17 +27,26 @@ public class Example3 {
 
         int x = 1;
         int y = 1;
-        int z;
+        int z = 0;
 
-        System.out.print(x+" " +y+ " ");
-        do {
-            z = x + y;
-            System.out.print(z + " ");
-            x = y;
-            y = z;
-        } while (z <= 88);
+        int three = 0;
 
-        System.out.println();
+        if (one == 1)  {
+            System.out.println(x);
+        } else if (one == 2) {
+            System.out.println(x+ " " +y);
+        } else if (one >= 3) {
+            System.out.print(x+" " +y+ " ");
+            while (three < (one -2)) {
+                z = x + y;
+                System.out.print(z + " ");
+                x = y;
+                y = z;
+                three++;
+            }
+        } else {
+            System.out.println("Введите число больше 0");
+        }
     }
 }
 

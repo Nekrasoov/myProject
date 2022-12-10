@@ -9,7 +9,7 @@ public class Example7 {
 
         char a = 97;
         System.out.println(a);
-        for (char i=a; i <= size.length; i+=2) {
+        for (char i=a; i <= size; i+=2) {
             System.out.println(+i);
         }
     }
