@@ -4,14 +4,23 @@ import java.util.Scanner;
 
 public class Example7 {
     public static void main(String[] args) {
-        int size = 10;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите размер массива: ");
+        int size = in.nextInt();
         System.out.println("Размер массива = " + size);
 
-        char a = 97;
-        System.out.println(a);
-        for (char i=a; i <= size; i+=2) {
-            System.out.println(+i);
+        char[] large = new char[size];
+        char a = 'a';
+        for (char i = 0; i < large.length; i++) {
+            large[i] = a++;
+            a++;
+            System.out.print(large[i] + " ");
         }
+        System.out.println();
+        for (int j = large.length-1; j >= 0; j--) {
+            System.out.print(large[j] + " ");
+        }
+
     }
 }
 
