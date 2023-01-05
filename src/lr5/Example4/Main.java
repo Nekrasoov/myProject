@@ -12,6 +12,13 @@ public class Main {
         this.int1 = int1;
     }
 
+    public Main(double d1){
+        char ch1 = (char)d1;
+        int ch2 = (int)d1;
+
+        int1 = (int)((d1 -(int)d1)*100);
+        System.out.println("Символ: "+ch1+ " Код символа: " +ch2+ "  Число: "+int1);
+    }
 
 }
 
