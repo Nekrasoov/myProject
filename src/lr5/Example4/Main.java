@@ -4,6 +4,15 @@ public class Main {
     public char ch1;
     public int int1;
 
+    public Main(char ch1) {
+        this.ch1 = ch1;
+    }
+
+    public Main(int int1) {
+        this.int1 = int1;
+    }
+
+
 }
 
 //4. Напишите программу с классом, у которого есть символьное и

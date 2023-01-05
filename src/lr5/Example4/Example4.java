@@ -1,6 +1,10 @@
 package lr5.Example4;
 
 public class Example4 {
+    public static void main(String[] args) {
+        char a = 'A';
+        System.out.println(+a);
+    }
 }
 
 //4. Напишите программу с классом, у которого есть символьное и
