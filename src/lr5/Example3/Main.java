@@ -2,15 +2,27 @@ package lr5.Example3;
 
 public class Main {
 
-    class task{
-        public int int1;
-        public int int2;
+        int int1, int2;
+
+
+
+        Main( ) {
+            System.out.println("Объекты без передачи аргументов: ");
+        }
+
+        Main( int int1 ) {
+            System.out.println("Объекты с передачей одного аргумента: " + int1);
+        }
+
+
+        Main( int int1, int int2 ) {
+            System.out.println("Объекты с передачей двух аргументов: " + int1 + " " + int2);
+        }
 
 
     }
 
 
-}
 
 //3. Напишите программу с классом, у которого есть два целочисленных поля.
 //В классе должны быть описаны конструкторы, позволяющие создавать
