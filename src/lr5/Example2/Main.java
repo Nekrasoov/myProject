@@ -6,14 +6,6 @@ public class Main {
 
     public char ch2;
 
-    public void setCh1(char ch1) {
-        this.ch1 = ch1;
-    }
-
-    public void setCh2(char ch2) {
-        this.ch2 = ch2;
-    }
-
     public void showChar(){
 
         int a = ch1;
@@ -23,7 +15,6 @@ public class Main {
             System.out.println( (char) i);
         }
     }
-
 }
 
 

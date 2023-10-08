@@ -7,8 +7,6 @@ public class Example1 {
 
         main.setCh1('k');
 
-        System.out.println("getCodeSymbol " + main.getCodeSymbol());
-
         main.showCodeAndValue();
 
     }

@@ -6,13 +6,13 @@ public class Example2 {
 
     public static void main(String[] args) {
 
-        Main main1 = new Main();
+        Main main = new Main();
 
-        main1.setCh1('A');
-        main1.setCh2('D');
+        main.ch1= ('A');
+        main.ch2=('D');
 
 
-        main1.showChar();
+        main.showChar();
 
     }
 

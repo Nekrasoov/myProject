@@ -2,22 +2,21 @@ package lr5.Example3;
 
 public class Main {
 
-        int int1, int2;
+        public int int1, int2;
 
 
+    public Main() {
+    }
 
-        Main( ) {
-            System.out.println("Объекты без передачи аргументов: ");
-        }
+    public Main(int int1) {
+        this.int1 = int1;
+    }
 
-        Main( int int1 ) {
-            System.out.println("Объекты с передачей одного аргумента: " + int1);
-        }
+    public Main(int int1, int int2) {
+        this.int1 = int1;
+        this.int2 = int2;
+    }
 
-
-        Main( int int1, int int2 ) {
-            System.out.println("Объекты с передачей двух аргументов: " + int1 + " " + int2);
-        }
 
 
     }

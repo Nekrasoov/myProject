@@ -4,15 +4,16 @@ import java.util.Scanner;
 
 public class Example3 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите первый аргумент: ");
-        int int1 = in.nextInt();
-        System.out.println("Введите второй аргумент: ");
-        int int2 = in.nextInt();
 
         Main main1 = new Main();
-        Main main2 = new Main(int1);
-        Main main3 = new Main(int1,int2);
+        main1.int1 = 1;
+        main1.int2 = 15;
+        Main main2 = new Main(1);
+        Main main3 = new Main(1,15);
+
+        System.out.println(main1.int1+ " " +main1.int2);
+        System.out.println(main2.int1+ " " +main2.int2);
+        System.out.println(main3.int1+ " " +main3.int2);
     }
 }
 
