@@ -1,7 +1,8 @@
 package lr6.Example1;
 
 public class Class {
-
+    public String text;
+    public char ch;
 }
 
 //. Напишите программу с классом, в котором есть два поля: символьное и текстовое.
