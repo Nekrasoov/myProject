@@ -1,6 +1,6 @@
 package lr6.Example9;
 
-public class Class {
+public class MyClass {
 }
 
 //Напишите программу со статическим методом, аргументом которому передается

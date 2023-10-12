@@ -1,8 +1,25 @@
 package lr6.Example1;
 
-public class Class {
-    public String text;
-    public char ch;
+public class MyClass {
+    String str1;
+    char ch1;
+
+    public void setCh1OrStr1(char ch1){
+        this.ch1=ch1;
+    }
+    public void setCh1OrStr1(String str1){
+        this.str1=str1;
+    }
+
+    public void setCh1OrStr1(char[] chars){
+        if (chars.length==1){
+            this.ch1=chars[0];
+        } else if (chars.length>1){
+            this.str1=String.valueOf(chars);
+        }
+    }
+
+
 }
 
 //. Напишите программу с классом, в котором есть два поля: символьное и текстовое.

@@ -15,6 +15,7 @@ public class Example2 {
 
             z = z + 1;
             System.out.println(" Количество символов в строке " + z);
+
         }
     }
 }

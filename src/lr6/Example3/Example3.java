@@ -1,6 +1,12 @@
 package lr6.Example3;
 
 public class Example3 {
+    public static void main(String[] args) {
+        MyClass myClass = new MyClass();
+        myClass.calcMax(1, 0, -9, 5, 25, -101);
+        myClass.calcMin(3, 0, 500, -2, 33, -5, 6, 17);
+        myClass.calcAvg(3, 0, 50, -2, 33, -5, 6, 17);
+    }
 }
 
 //Напишите программу с классом, в котором есть статические методы, которым

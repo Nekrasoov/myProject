@@ -1,7 +1,20 @@
 package lr6.Example2;
 
-public class Class {
-}
+public class MyClass {
+
+    static int int1;
+
+    public void callMethod() {
+        method();
+    }
+    static void method (){
+        System.out.println("Текущее значение статического поля = " + int1);
+        int1++;
+        System.out.println("Значение поля увеличивается на единицу = " + int1);
+        }
+    }
+
+
 
 //Напишите программу с классом, в котором есть закрытое статическое
 //целочисленное ноле с начальным нулевым значением. В классе должен быть описан
