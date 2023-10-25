@@ -1,19 +1,26 @@
-package youtube;
+package youtube.object;
 
 public class Computer {
 
     private String name;
-    private int ram;
-    private int hdd;
+    private int Ram;
+    private int Hdd;
     private double weight;
+    private CDRom cdRom;
 
+
+
+    public Computer() {
+
+    }
 
     public Computer(String name, int ram, int hdd, double weight) {
         this.name = name;
-        this.ram = ram;
-        this.hdd = hdd;
+        this.Ram = ram;
+        this.Hdd = hdd;
         this.weight = weight;
     }
+
 
     public String getName(){
         return name;
@@ -23,13 +30,13 @@ public class Computer {
     }
 
     public int getRam() {
-        return ram;
+        return Ram;
     }
 
 
     public void setRam(int ram) {
         if (ram>0){
-            this.ram = ram;
+            this.Ram = ram;
         } else {
             System.out.println("Переданное значение"+ram+"не может быть отрицательным");
         }
@@ -37,12 +44,12 @@ public class Computer {
     }
 
     public int getHdd() {
-        return hdd;
+        return Hdd;
     }
 
     public void setHdd(int hdd) {
         if (hdd>0){
-            this.hdd = hdd;
+            this.Hdd = hdd;
         } else {
             System.out.println("Переданное значение"+hdd+"не может быть отрицательным");
         }
@@ -56,6 +63,7 @@ public class Computer {
         this.weight = weight;
     }
 
+
     public void on (){
         print("Я включился. Моя модель:" +getName());
     }
@@ -68,9 +76,23 @@ public class Computer {
         print("Я загружаюсь. Мой объем жесткого диска равен:" +getHdd()+ " ГБ");
     }
 
-    private void print(String str) {
+
+    public static void print(String str) {
         System.out.println(str);
     }
 
+    public void writeCD(){
+        if (cdRom==null)  cdRom = new CDRom();
+        cdRom.writeCD();
+    }
+
+
+    public void reboot () {
+
+    }
+
+    public void reboot (boolean safeMode) {
+        reboot();
+    }
 
 }
